@@ -1,4 +1,4 @@
-## Digital Scrapbooking with an ESP-32
+## Musically Responsive LED Disco Ball
 
 ![Imgae of hollow spherical shape composed of LED lights and clear tubing, lit up in many colors](https://catherine-o-brien.github.io/images/musical-led-disco-ball/disco-ball.png "The disco ball I created!")
 
