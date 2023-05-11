@@ -78,5 +78,4 @@ If they do not match, its behavior depends on whether or not it detected a beat.
 ```
 
 ## FINAL DEVICE
-Check out the final product here! 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Va2wmVxZMc4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+Check out the final product [here](https://www.youtube.com/embed/Va2wmVxZMc4)! 
