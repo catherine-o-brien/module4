@@ -6,7 +6,7 @@ I have always wanted to create some sort of display that responds to music, and 
 
 [View this project on my website!](catherine-o-brien.github.io/musical-led-disco-ball)
 
-##MATERIALS
+## MATERIALS
 * **Arduino ESP-32 TTGO T-display** [like this one](https://www.amazon.com/LILYGO-T-Display-Arduino-Development-CH9102F/dp/B099MPFJ9M)
 * **USB-C cord** (make sure that your cord supports data transfer, not just power– [see more about that here](https://www.dignited.com/50330/usb-data-cable-vs-usb-charging-cable/). For this project, you will use this cable both to upload code to your device during development and to power the device once it is finished.)
 * **Microphone** (I used the [Arduino Sound Sensor](https://microcontrollerslab.com/ky-038-microphone-sound-sensor-module-arduino-tutorial/))
@@ -18,15 +18,15 @@ I have always wanted to create some sort of display that responds to music, and 
 * **Xacto knife**
 * **Arduino IDE** [download here](https://support.arduino.cc/hc/en-us/articles/360019833020-Download-and-install-Arduino-IDE)
 
-##PROCESS
-#HARDWARE
+## PROCESS
+# HARDWARE
 Using wires, I connected an ESP32 to an Arduino Sound Sensor, a microphone. The ESP32 provides power to the Arduino Sound Sensor, and it also reads data from the Sound Sensor's analog connection. I did not use the digital connection on the Sound Sensor for this project. I also connected an LED strip to a battery pack as a power supply, and then connected its data connection to the ESP32. The ESP32 is powered by a USB-C cable. 
 
 [Check out my website for more specifics on hardware.](catherine-o-brien.github.io/musical-led-disco-ball)
 
 I flashed my code from the Arduino IDE onto my ESP32, where it runs, using the USB-C cable.  
 
-#SOFTWARE
+# SOFTWARE
 Using the hardware setup, the ESP32 reads in all the analog values the microphone outputs over a 250 millisecond period. It tracks the highest and lowest values in that range, and when the 250 millisecond period is up, it computes the range of values it read. 
 If the range of the values exceeds the threshold of 200, called in my code the beat_threshold, then the ESP32 registers a beat. 
 
@@ -77,6 +77,6 @@ If they do not match, its behavior depends on whether or not it detected a beat.
   current_color = random(0, 256);
 ```
 
-##FINAL DEVICE
+## FINAL DEVICE
 Check out the final product here! 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Va2wmVxZMc4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
